@@ -1,5 +1,8 @@
 #!/bin/bash
 person1=ramesh
 person2=suresh
-echo" ${person1}::Hi..!${person2}how are you...?"
-echo" ${person2}:: oh..Hi..!${person1},hope you are also doing good."
+
+echo "$PERSON1: Hello $PERSON2, Good Morning"
+echo "$PERSON2: Hi $PERSON1, very Good Morning"
+echo "$PERSON1: How are you $PERSON2?"
+echo "$PERSON2: I am good $PERSON1, How are you"
