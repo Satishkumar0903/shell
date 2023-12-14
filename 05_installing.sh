@@ -22,9 +22,9 @@ echo -e "you are not a $R root user $N"
 else
 echo -e "you are a $G root user $N"
 fi
-yum installlllll mysql -y &>> $LOG
+yum install mysql -y &>> $LOG
 validate $? "mysql"
-yum installlllllll git -y &>> $LOG
+yum install git -y &>> $LOG
 validate $? "git"
 
 
