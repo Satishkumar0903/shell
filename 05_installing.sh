@@ -12,15 +12,15 @@ then
 echo -e "Error:: $2 install $R failue occurs$N"
 exit 1
 else
-echo "$2 installed $G successfully ....!$N"
+echo -e "$2 installed $G successfully ....!$N"
 fi
 }
 ID=$(id -u)
 if [ $ID -ne 0 ] &>> $LOG
 then
-echo "you are not a $R root user $N"
+echo -e "you are not a $R root user $N"
 else
-echo "you are a $G root user $N"
+echo -e "you are a $G root user $N"
 fi
 yum installlllll mysql -y &>> $LOG
 validate $? "mysql"
