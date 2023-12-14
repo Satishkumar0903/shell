@@ -20,7 +20,7 @@ if [ $ID -ne 0 ] &>> $LOG
 then
 echo "you are not a $R root user $N"
 else
-echo "you are a $G root user"
+echo "you are a $G root user $N"
 fi
 yum installlllll mysql -y &>> $LOG
 validate $? "mysql"
