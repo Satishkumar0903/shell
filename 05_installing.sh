@@ -8,7 +8,7 @@ if [ $1 -ne 0 ]
 then
 echo "Error:: $2 install failue occurs"
 else
-echo "Mysql installed successfully installed....!"
+echo "$2 installed successfully ....!"
 fi
 }
 ID=$(id -u)
@@ -18,8 +18,8 @@ echo "you are not a root user"
 else
 echo "you are a root user"
 fi
-yum install mysql -y &>> $LOG
+yum installlllll mysql -y &>> $LOG
 validate $? "mysql"
-yum install git -y
+yum installlllllll git -y
 validate $? "git"
 
