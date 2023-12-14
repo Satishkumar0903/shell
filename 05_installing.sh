@@ -1,10 +1,10 @@
 #!/bin/bash
 TIME=$(date +%F-%H-%M-%S)
 LOG="/tmp/$0-$TIME.log"
-echo "Script started executing at $TIME" &>> $LOG
+echo "Script started executing at $TIME"
 echo "checking root user are not"
 ID=$(id -u)
-if [ $ID -ne 0 ]
+if [ $ID -ne 0 ] &>> $LOG
 then
 echo "you are not a root user"
 else
